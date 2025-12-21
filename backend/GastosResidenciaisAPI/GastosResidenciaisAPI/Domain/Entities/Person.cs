@@ -13,5 +13,7 @@ namespace GastosResidenciaisAPI.Domain.Entities
 
         [Range(0, 120)]
         public int Age { get; set; }
+
+        public ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
     }
 }

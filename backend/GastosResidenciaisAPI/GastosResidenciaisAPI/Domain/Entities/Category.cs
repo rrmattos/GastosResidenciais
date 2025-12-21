@@ -14,5 +14,7 @@ namespace GastosResidenciaisAPI.Domain.Entities
 
         [Required]
         public CategoryPurpose Purpose { get; set; }
+
+        public ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
     }
 }
