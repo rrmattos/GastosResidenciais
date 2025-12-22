@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace GastosResidenciaisAPI.Controllers
 {
     [ApiController]
-    [Route("api/reports")]
+    [Route("api/[controller]")]
     public class ReportController : ControllerBase
     {
         private readonly ReportService _reportService;

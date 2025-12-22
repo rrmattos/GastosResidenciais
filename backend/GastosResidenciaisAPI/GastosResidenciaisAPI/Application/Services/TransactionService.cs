@@ -94,12 +94,6 @@ namespace GastosResidenciaisAPI.Application.Services
                 .FirstOrDefaultAsync(t => t.Id == transactionId) ??
                     throw new ValidationException("Transação não encontrada.");
 
-            //if (category.Purpose == CategoryPurpose.Expense && dto.Type == TransactionType.Income)
-            //    throw new BusinessException("This category cannot be used for income.");
-
-            //if (category.Purpose == CategoryPurpose.Income && dto.Type == TransactionType.Expense)
-            //    throw new BusinessException("This category cannot be used for expense.");
-
             return new TransactionDTO
             {
                 Id = transaction.Id,
